@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Tính kích thước màn hình</h1>
+    <div class ="calculate">
+        <table class = table-input >
+            <tr>
+                <th><label for="ratio">RATIO</label></th>
+                <th> <label for="inputA">WIDTH</label></th>
+            </tr>
+            <tr>
+                <td>
+                    <select id="ratio">
+                        <option value="16:9">16:9</option>
+                        <option value="4:3">4:3</option>
+                        <option value="1:1">1:1</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" id="inputA">
+                </td>
+            </tr>
+            <tr>
+                    <th><label for="inputB">HEIGHT</label></th>
+                    <th><label for="inputC">DIAGONAL</label></th>
+            </tr>
+            <tr>
+                    
+                <td><input type="number" id="inputB"></td>
+                <td><input type="number" id="inputC"></td>
+            </tr>
+            <button onclick="calculateSize()">Tính kích thước</button>
+        </table>
+    </div>
+    <table class="table-result" border = "1">  
+        <h1>Kết quả</h1>
+        <tr><td>Height (a): </td><td id="resultA"></td></tr>
+        <tr><td>Width (b): </td><td id ="resultB"></td></tr>
+        <tr><td>Diagonal (c): </td><td id = "resultC"></td></tr>
+        
+    </table>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
+
+
